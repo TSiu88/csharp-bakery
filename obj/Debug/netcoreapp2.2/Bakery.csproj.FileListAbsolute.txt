@@ -1,0 +1,11 @@
+E:\Documents\Programming\Epicodus\Csharp\bakery\bin\Debug\netcoreapp2.2\Bakery.deps.json
+E:\Documents\Programming\Epicodus\Csharp\bakery\bin\Debug\netcoreapp2.2\Bakery.runtimeconfig.json
+E:\Documents\Programming\Epicodus\Csharp\bakery\bin\Debug\netcoreapp2.2\Bakery.runtimeconfig.dev.json
+E:\Documents\Programming\Epicodus\Csharp\bakery\bin\Debug\netcoreapp2.2\Bakery.dll
+E:\Documents\Programming\Epicodus\Csharp\bakery\bin\Debug\netcoreapp2.2\Bakery.pdb
+E:\Documents\Programming\Epicodus\Csharp\bakery\obj\Debug\netcoreapp2.2\Bakery.csprojAssemblyReference.cache
+E:\Documents\Programming\Epicodus\Csharp\bakery\obj\Debug\netcoreapp2.2\Bakery.csproj.CoreCompileInputs.cache
+E:\Documents\Programming\Epicodus\Csharp\bakery\obj\Debug\netcoreapp2.2\Bakery.AssemblyInfoInputs.cache
+E:\Documents\Programming\Epicodus\Csharp\bakery\obj\Debug\netcoreapp2.2\Bakery.AssemblyInfo.cs
+E:\Documents\Programming\Epicodus\Csharp\bakery\obj\Debug\netcoreapp2.2\Bakery.dll
+E:\Documents\Programming\Epicodus\Csharp\bakery\obj\Debug\netcoreapp2.2\Bakery.pdb
