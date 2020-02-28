@@ -65,8 +65,8 @@ namespace BakedGoods
 
     static void CalculateTotal(int breadQuanitity, int pastryQuantity)
     {
-      int breadTotal = bread.BreadTotal(breadQuanitity);
-      int pastryTotal = pastry.PastryTotal(pastryQuantity);
+      int breadTotal = bread.GetTotal(breadQuanitity);
+      int pastryTotal = pastry.GetTotal(pastryQuantity);
       int totalCost = breadTotal + pastryTotal;
       PrintTotal(breadTotal, pastryTotal, totalCost);
     }
