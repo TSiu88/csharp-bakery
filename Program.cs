@@ -73,9 +73,9 @@ namespace BakedGoods
     static void PrintTotal(int breadTotal, int pastryTotal, int totalCost)
     {
       Console.WriteLine(".-=-._.-=-. Order Total .-=-._.-=-.");
-      Console.WriteLine($"Bread Total: ${breadTotal}");
-      Console.WriteLine($"Pastry Total: ${pastryTotal}");
-      Console.WriteLine($"Total Cost: ${totalCost}");
+      Console.WriteLine($"\tBread Total: ${breadTotal}");
+      Console.WriteLine($"\tPastry Total: ${pastryTotal}");
+      Console.WriteLine($"\tTotal Cost: ${totalCost}");
       Console.WriteLine(".-=-._.-=-._.-=-._.-=-._.-=-._.-=-.");
     }
   }

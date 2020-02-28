@@ -6,8 +6,10 @@
 
 ## Description
 
-_README under construction_
-<!-- _Detailed desc w/ purpose/usage, what does, motivation to create, why exists, other info for users/developers to have_ -->
+This application is the Week 8 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  This is a program made to show basic C# concepts, syntax, and structure with a focus on classes, namespaces, methods, and properties.  This also focuses on concepts learned this week of visibility, access modifiers, encapsulation, and abstraction.
+
+This program is a console application for a bakery that allows a user to order different bakery items and receive the total cost of what was ordered.  The items of bread and pastries have individual costs (bread for $5 and pastries for $2) but also have special deals which have a discounted price.  The special deals are "Buy 2 get 1 free" for bread and "3 for $5" for pastries.
+
 
 ## Setup/Installation Requirements
 
@@ -41,8 +43,7 @@ _README under construction_
 | **If the program takes input of user that is not an integer, assume quantity 0 ordered** | Bread="aaa", Pastry="" | Bread=0, Pastry=0 |
 | **The program takes number of loaves of bread and pastries and displays totals** | Bread=4, Pastry=4 | Bread=$20, Pastry=$8, Total=$28 |
 | **If input qualifies for special deals, costs calculated using discounted price** | Bread=3, Pastry=3 | Bread=$10, Pastry=$5, Total=$15 |
-| **The program can be exited with input "quit" whenever input is prompted** | Input="quit" | Application exits |
-
+| **The program can be exited with input "quit" whenever input is prompted** | Input="quit" | "Goodbye!" Application exits |
 
 ## Screenshots
 
