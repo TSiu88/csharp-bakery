@@ -1,8 +1,5 @@
-using System;
-
 namespace BakedGoods.Models
 {
-
   public class Bread
   {
     public static int Price { get; set; }

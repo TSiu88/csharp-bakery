@@ -1,9 +1,5 @@
-using System;
-
 namespace BakedGoods.Models
 {
-  
-
   public class Pastry
   {
     public static int Price { get; set; }
@@ -34,7 +30,34 @@ namespace BakedGoods.Models
     public int PastryTotal(int quantity)
     {
       int cost = 0;
+      bool specialDeal = CheckSpecial(quantity);
+      cost = CalculateCost(quantity, specialDeal);
       return cost;
+    }
+
+    private bool CheckSpecial(int quantity)
+    {
+      if (quantity % SpecialQuantity == 0)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
+
+    private int CalculateCost(int quantity, bool deal)
+    {
+      if (deal)
+      {
+        int dealsToCharge = quantity/SpecialQuantity;
+        return dealsToCharge * SpecialPrice;
+      }
+      else
+      {
+        return quantity * Price;
+      }
     }
   }
 }
