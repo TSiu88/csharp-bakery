@@ -32,7 +32,7 @@ This program is a console application for a bakery that allows a user to order d
 * _Markdown_
 
 ## Notable Features
-<!-- _features that make project stand out_ -->
+This program uses several ASCII borders to make different sections of the text stand out in the console.  The special special deals in the menu are created with different wording depending on the number of items and the price for a special deal instead of being hardcoded in.
 
 ## Specifications
 
@@ -47,15 +47,9 @@ This program is a console application for a bakery that allows a user to order d
 
 ## Screenshots
 
-<!-- _Here is a snippet of what the input looks like:_
+_Here is a snippet of what the console looks like:_
 
-![Snippet of input fields](img/snippet1.png)
-
-_Here is a preview of what the output looks like:_
-
-![Snippet of output box](img/snippet2.png) -->
-
-<!-- _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_ -->
+![Snippet of console application](img/snippet1.png)
 
 ## Known Bugs
 

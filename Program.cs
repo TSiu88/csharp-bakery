@@ -12,32 +12,33 @@ namespace BakedGoods
     {
       bread = new Bread();
       pastry = new Pastry();
-      Console.WriteLine(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.");
-      Console.WriteLine(")| Welcome to Pierre's Bakery |(");
-      Console.WriteLine("'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'");
+      Console.WriteLine(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.");
+      Console.WriteLine(")|\t Welcome to Pierre's Bakery! \t|(");
+      Console.WriteLine("'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'");
       DisplayMenu();
       TakeOrder();
     }
 
     static void DisplayMenu()
     {
-      Console.WriteLine("~~~~~~~ Today's Menu ~~~~~~~");
-      Console.WriteLine("Bread: $" + Bread.Price);
-      Console.WriteLine("Pastry: $" + Pastry.Price);
-      Console.WriteLine("~~~~~~ Special Deals ~~~~~~~");
-      Console.WriteLine($"Buy {Bread.SpecialDealString()}!");
-      Console.WriteLine($"Buy {Pastry.SpecialDealString()}!");
+      Console.WriteLine("   ~~~~~~~~~~ Today's Menu ~~~~~~~~~~");
+      Console.WriteLine("\tBread: $" + Bread.Price);
+      Console.WriteLine("\tPastry: $" + Pastry.Price);
+      Console.WriteLine("   ~~~~~~~~~ Special Deals ~~~~~~~~~~");
+      Console.WriteLine($"\tBuy {Bread.SpecialDealString()}!");
+      Console.WriteLine($"\tBuy {Pastry.SpecialDealString()}!");
     }
 
     static void TakeOrder()
     {
-      Console.WriteLine("======== Your Order ========");
+      Console.WriteLine("============== Your Order ==============");
       Console.WriteLine("How many loaves of bread would you like?");
       string breadString = Console.ReadLine();
       int breadQuantity = CheckInput(breadString);
       Console.WriteLine("How many pastries would you like?");
       string pastryString = Console.ReadLine();
       int pastryQuantity = CheckInput(pastryString);
+      Console.WriteLine("========================================");
       CalculateTotal(breadQuantity, pastryQuantity);
     }
 
@@ -72,11 +73,11 @@ namespace BakedGoods
 
     static void PrintTotal(int breadTotal, int pastryTotal, int totalCost)
     {
-      Console.WriteLine(".-=-._.-=-. Order Total .-=-._.-=-.");
+      Console.WriteLine("-._.-=-._.-=-. Order Total .-=-._.-=-._.-");
       Console.WriteLine($"\tBread Total: ${breadTotal}");
       Console.WriteLine($"\tPastry Total: ${pastryTotal}");
       Console.WriteLine($"\tTotal Cost: ${totalCost}");
-      Console.WriteLine(".-=-._.-=-._.-=-._.-=-._.-=-._.-=-.");
+      Console.WriteLine("-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-");
     }
   }
 }
