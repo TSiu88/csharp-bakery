@@ -14,7 +14,7 @@ namespace BakedGoods.Models
       SpecialPrice = 1;
     }
 
-    public virtual string SpecialDealString ()
+    public string SpecialDealString ()
     {
       if(SpecialPrice % Price == 0)
       {

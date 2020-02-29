@@ -8,6 +8,5 @@ namespace BakedGoods.Models
       SpecialQuantity = 3;
       SpecialPrice = 2 * Price;
     }
-
   }
 }

@@ -32,7 +32,7 @@ This program is a console application for a bakery that allows a user to order d
 * _Markdown_
 
 ## Notable Features
-This program uses several ASCII borders to make different sections of the text stand out in the console.  The special special deals in the menu are created with different wording depending on the number of items and the price for a special deal instead of being hardcoded in.
+This program uses several ASCII borders to make different sections of the text stand out in the console.  The special special deals in the menu are created with different wording depending on the number of items and the price for a special deal instead of being hardcoded in.  The program also uses inheritance to prevent repeating identical code in multiple classes.
 
 ## Specifications
 

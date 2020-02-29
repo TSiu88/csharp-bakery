@@ -17,14 +17,14 @@ namespace BakedGoods
       TakeOrder();
     }
 
-    static void DisplayTitle()
+    private static void DisplayTitle()
     {
       Console.WriteLine(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.");
       Console.WriteLine(")|\t Welcome to Pierre's Bakery! \t|(");
       Console.WriteLine("'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'");
     }
 
-    static void DisplayMenu()
+    private static void DisplayMenu()
     {
       Console.WriteLine("   ~~~~~~~~~~ Today's Menu ~~~~~~~~~~");
       Console.WriteLine("\tBread: $" + bread.Price);
@@ -47,7 +47,7 @@ namespace BakedGoods
       CalculateTotal(breadQuantity, pastryQuantity);
     }
 
-    static int CheckInput(string input)
+    private static int CheckInput(string input)
     {
       int number;
       bool isInt = Int32.TryParse(input, out number);
@@ -76,7 +76,7 @@ namespace BakedGoods
       PrintTotal(breadTotal, pastryTotal, totalCost);
     }
 
-    static void PrintTotal(int breadTotal, int pastryTotal, int totalCost)
+    private static void PrintTotal(int breadTotal, int pastryTotal, int totalCost)
     {
       Console.WriteLine("-._.-=-._.-=-. Order Total .-=-._.-=-._.-");
       Console.WriteLine($"\tBread Total: ${breadTotal}");
