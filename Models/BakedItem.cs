@@ -20,6 +20,10 @@ namespace BakedGoods.Models
       {
         return $"No special available for {Item} today!";
       }
+      else if (Price <= 0)
+      {
+        return $"All {Item} are free today!";
+      }
       else if(SpecialPrice % Price == 0)
       {
         int quantityCharged = SpecialPrice/Price;
@@ -42,7 +46,11 @@ namespace BakedGoods.Models
 
     private bool CheckSpecial(int quantity)
     {
-      if (quantity % SpecialQuantity == 0)
+      if(SpecialQuantity <=0 || SpecialPrice <=0 || Price <=0)
+      {
+        return false;
+      }
+      else if (quantity % SpecialQuantity == 0)
       {
         return true;
       }
@@ -61,7 +69,15 @@ namespace BakedGoods.Models
       }
       else
       {
-        return quantity * Price;
+        int cost = quantity * Price;
+        if (cost < 0)
+        {
+          return 0;
+        }
+        else
+        {
+          return cost;
+        }
       }
     }
   }
