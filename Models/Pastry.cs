@@ -2,11 +2,7 @@ namespace BakedGoods.Models
 {
   public class Pastry : BakedItem
   {
-    public static int Price { get; set; }
-    public static int SpecialQuantity { get; set; }
-    public static int SpecialPrice { get; set; }
-
-    public Pastry()
+    public Pastry() : base("Pastry")
     {
       Price = 2;
       SpecialQuantity = 3;

@@ -12,21 +12,26 @@ namespace BakedGoods
     {
       bread = new Bread();
       pastry = new Pastry();
+      DisplayTitle();
+      DisplayMenu();
+      TakeOrder();
+    }
+
+    static void DisplayTitle()
+    {
       Console.WriteLine(".-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.");
       Console.WriteLine(")|\t Welcome to Pierre's Bakery! \t|(");
       Console.WriteLine("'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'");
-      DisplayMenu();
-      TakeOrder();
     }
 
     static void DisplayMenu()
     {
       Console.WriteLine("   ~~~~~~~~~~ Today's Menu ~~~~~~~~~~");
-      Console.WriteLine("\tBread: $" + Bread.Price);
-      Console.WriteLine("\tPastry: $" + Pastry.Price);
+      Console.WriteLine("\tBread: $" + bread.Price);
+      Console.WriteLine("\tPastry: $" + pastry.Price);
       Console.WriteLine("   ~~~~~~~~~ Special Deals ~~~~~~~~~~");
-      Console.WriteLine($"\tBuy {Bread.SpecialDealString()}!");
-      Console.WriteLine($"\tBuy {Pastry.SpecialDealString()}!");
+      Console.WriteLine($"\tBuy {bread.SpecialDealString()}!");
+      Console.WriteLine($"\tBuy {pastry.SpecialDealString()}!");
     }
 
     static void TakeOrder()
