@@ -8,7 +8,7 @@
 
 This application is the Week 8 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  This is a program made to show basic C# concepts, syntax, and structure with a focus on classes, namespaces, methods, and properties.  This also focuses on concepts learned this week of visibility, access modifiers, encapsulation, and abstraction.
 
-This program is a console application for a bakery that allows a user to order different bakery items and receive the total cost of what was ordered.  The items of bread and pastries have individual costs (bread for $5 and pastries for $2) but also have special deals which have a discounted price.  The special deals are "Buy 2 get 1 free" for bread and "3 for $5" for pastries.
+This program is a console application for a bakery that allows a user to order different bakery items and receive the total cost of what was ordered.  The items of bread and pastries have individual costs (bread for $5 and pastries for $2) but also have special deals which have a discounted price if a certain amount (or multiple of that amount) of an item is ordered.  The special deals are "Buy 2 get 1 free" for bread and "3 for $5" for pastries.
 
 
 ## Setup/Installation Requirements

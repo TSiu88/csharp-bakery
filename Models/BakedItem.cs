@@ -9,7 +9,7 @@ namespace BakedGoods.Models
     public BakedItem(string item)
     {
       Item = item;
-      Price = 1;
+      Price = 0;
       SpecialQuantity = 0;
       SpecialPrice = 0;
     }
@@ -18,7 +18,15 @@ namespace BakedGoods.Models
     {
       if (SpecialPrice <= 0 || SpecialQuantity <= 0)
       {
-        return $"No special available for {Item} today!";
+        if (SpecialQuantity > 0)
+        {
+          return $"Get {SpecialQuantity} {Item} for free today!";
+        }
+        else
+        {
+          return $"No special available for {Item} today!";
+        }
+        
       }
       else if (Price <= 0)
       {
@@ -46,7 +54,11 @@ namespace BakedGoods.Models
 
     private bool CheckSpecial(int quantity)
     {
-      if(SpecialQuantity <=0 || SpecialPrice <=0 || Price <=0)
+      if (SpecialQuantity >0 && SpecialPrice <=0)
+      {
+        return true;
+      }
+      else if(SpecialQuantity <=0 || SpecialPrice <=0 || Price <=0)
       {
         return false;
       }
@@ -64,6 +76,18 @@ namespace BakedGoods.Models
     {
       if (deal)
       {
+        if (SpecialPrice <=0)
+        {
+          int numberToCharge = quantity-SpecialQuantity;
+          if (numberToCharge <=0)
+          {
+            return 0;
+          }
+          else
+          {
+            return numberToCharge * Price;
+          }
+        }
         int dealsToCharge = quantity/SpecialQuantity;
         return dealsToCharge * SpecialPrice;
       }
