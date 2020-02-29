@@ -10,21 +10,25 @@ namespace BakedGoods.Models
     {
       Item = item;
       Price = 1;
-      SpecialQuantity = 1;
-      SpecialPrice = 1;
+      SpecialQuantity = 0;
+      SpecialPrice = 0;
     }
 
     public string SpecialDealString ()
     {
-      if(SpecialPrice % Price == 0)
+      if (SpecialPrice <= 0 || SpecialQuantity <= 0)
+      {
+        return $"No special available for {Item} today!";
+      }
+      else if(SpecialPrice % Price == 0)
       {
         int quantityCharged = SpecialPrice/Price;
         int numberFree = SpecialQuantity - quantityCharged;
-        return $"{quantityCharged} {Item}, get {numberFree} free";
+        return $"Buy {quantityCharged} {Item}, get {numberFree} free!";
       }
       else
       {
-        return $"{SpecialQuantity} {Item} for ${SpecialPrice}";
+        return $"Buy {SpecialQuantity} {Item} for ${SpecialPrice}!";
       }
     }
 

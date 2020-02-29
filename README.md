@@ -15,7 +15,7 @@ This program is a console application for a bakery that allows a user to order d
 
 ### Requirements to Run
 * _.NET_
-* _Command Prompt_
+* _Command Line Interface_
 
 ### Instructions
 
@@ -32,18 +32,20 @@ This program is a console application for a bakery that allows a user to order d
 * _Markdown_
 
 ## Notable Features
-This program uses several ASCII borders to make different sections of the text stand out in the console.  The special special deals in the menu are created with different wording depending on the number of items and the price for a special deal instead of being hardcoded in.  The program also uses inheritance to prevent repeating identical code in multiple classes.
+* This program uses several ASCII borders to make different sections of the text stand out in the console.
+* The special deals in the menu are created with different wording depending on the number of items and the price for a special deal instead of being hardcoded in.
+* The program uses inheritance to prevent repeating identical code in multiple classes.
 
 ## Specifications
 
 | Specification | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **The program displays welcome message and menu with prices** | Application start | "Welcome to Pierre's Bakery!" Bread=$5, Pastries=$2 |
-| **The program displays special deals in readable format** | Application start | Special deals displayed ("Buy 2, get 1 free" "3 for $5") |
-| **If the program takes input of user that is not an integer, assume quantity 0 ordered** | Bread="aaa", Pastry="" | Bread=0, Pastry=0 |
-| **The program takes number of loaves of bread and pastries and displays totals** | Bread=4, Pastry=4 | Bread=$20, Pastry=$8, Total=$28 |
-| **If input qualifies for special deals, costs calculated using discounted price** | Bread=3, Pastry=3 | Bread=$10, Pastry=$5, Total=$15 |
-| **The program can be exited with input "quit" whenever input is prompted** | Input="quit" | "Goodbye!" Application exits |
+| The program displays welcome message and menu with prices | Application start | "Welcome to Pierre's Bakery!" Bread=$5, Pastries=$2 |
+| The program displays special deals in readable format | Application start | Special deals displayed ("Buy 2, get 1 free" "3 for $5") |
+| If the program takes input of user that is not an integer, assume quantity 0 ordered | Bread="aaa", Pastry="" | Bread=0, Pastry=0 |
+| The program takes number of loaves of bread and pastries and displays totals | Bread=4, Pastry=4 | Bread=$20, Pastry=$8, Total=$28 |
+| If input qualifies for special deals, costs calculated using discounted price | Bread=3, Pastry=3 | Bread=$10, Pastry=$5, Total=$15 |
+| The program can be exited with input "quit" whenever input is prompted | Input="quit" | "Goodbye!" Application exits |
 
 ## Screenshots
 

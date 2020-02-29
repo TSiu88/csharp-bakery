@@ -30,8 +30,8 @@ namespace BakedGoods
       Console.WriteLine("\tBread: $" + bread.Price);
       Console.WriteLine("\tPastry: $" + pastry.Price);
       Console.WriteLine("   ~~~~~~~~~ Special Deals ~~~~~~~~~~");
-      Console.WriteLine($"\tBuy {bread.SpecialDealString()}!");
-      Console.WriteLine($"\tBuy {pastry.SpecialDealString()}!");
+      Console.WriteLine($"\t{bread.SpecialDealString()}");
+      Console.WriteLine($"\t{pastry.SpecialDealString()}");
     }
 
     static void TakeOrder()
